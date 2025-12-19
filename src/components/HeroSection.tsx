@@ -29,17 +29,6 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            
-            <Button 
-              asChild 
-              size="lg" 
-              variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-            >
-              <Link to="/decoracao">
-                Ver Produtos
-              </Link>
-            </Button>
           </div>
         </div>
       </div>
