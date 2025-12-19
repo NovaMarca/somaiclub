@@ -42,7 +42,7 @@ export function Header() {
                   className={cn(
                     "px-4 py-2 text-sm font-medium rounded-md transition-all duration-200",
                     isActive
-                      ? "bg-primary text-primary-foreground"
+                      ? "bg-accent text-accent-foreground"
                       : "text-foreground hover:bg-secondary hover:text-secondary-foreground"
                   )}
                 >
@@ -75,7 +75,7 @@ export function Header() {
                         className={cn(
                           "px-4 py-3 text-base font-medium rounded-md transition-all duration-200",
                           isActive
-                            ? "bg-primary text-primary-foreground"
+                            ? "bg-accent text-accent-foreground"
                             : "text-foreground hover:bg-secondary"
                         )}
                       >

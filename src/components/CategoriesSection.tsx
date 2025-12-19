@@ -1,27 +1,26 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Palette, Gift, Flag } from "lucide-react";
+import categoryDecoracaoImg from "@/assets/category-decoracao.jpg";
+import categoryBrindesImg from "@/assets/category-brindes.jpg";
+import categoryPdvImg from "@/assets/category-pdv.jpg";
 
 const categories = [
   {
     title: "Decoração",
     description: "Adesivos, quadros e objetos personalizados para transformar ambientes.",
-    icon: Palette,
+    image: categoryDecoracaoImg,
     href: "/decoracao",
-    color: "bg-accent/10 text-accent",
   },
   {
     title: "Brindes",
     description: "Eletrônicos, camisetas e itens promocionais para sua marca.",
-    icon: Gift,
+    image: categoryBrindesImg,
     href: "/brindes",
-    color: "bg-accent/10 text-accent",
   },
   {
     title: "PDV",
     description: "Banners, wind banners e materiais para ponto de venda.",
-    icon: Flag,
+    image: categoryPdvImg,
     href: "/pdv",
-    color: "bg-accent/10 text-accent",
   },
 ];
 
@@ -43,24 +42,25 @@ export function CategoriesSection() {
             <Link
               key={category.title}
               to={category.href}
-              className="group p-8 bg-card rounded-xl border border-border hover:border-accent transition-all duration-300 hover:shadow-xl"
+              className="group overflow-hidden bg-card rounded-xl border border-border hover:border-accent transition-all duration-300 hover:shadow-xl"
             >
-              <div className={`w-14 h-14 rounded-lg ${category.color} flex items-center justify-center mb-6`}>
-                <category.icon className="h-7 w-7" />
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src={category.image} 
+                  alt={category.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               
-              <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-accent transition-colors">
-                {category.title}
-              </h3>
-              
-              <p className="text-muted-foreground mb-4">
-                {category.description}
-              </p>
-              
-              <span className="inline-flex items-center text-sm font-medium text-accent">
-                Ver produtos
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </span>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-accent transition-colors">
+                  {category.title}
+                </h3>
+                
+                <p className="text-muted-foreground">
+                  {category.description}
+                </p>
+              </div>
             </Link>
           ))}
         </div>
