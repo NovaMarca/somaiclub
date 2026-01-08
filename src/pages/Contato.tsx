@@ -1,6 +1,7 @@
-import { useState } from "react";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
+import { SomaiHeader } from "@/components/somai/SomaiHeader";
+import { SomaiFooter } from "@/components/somai/SomaiFooter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,6 +11,9 @@ import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
 
 export default function ContatoPage() {
+  const [searchParams] = useSearchParams();
+  const assunto = searchParams.get("assunto");
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,6 +24,12 @@ export default function ContatoPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (assunto) {
+      setFormData((prev) => ({ ...prev, message: `Interesse em: ${assunto}\n\n` }));
+    }
+  }, [assunto]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,8 +47,8 @@ export default function ContatoPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <div className="min-h-screen flex flex-col somai-theme">
+      <SomaiHeader />
       
       <main className="flex-1 pt-16">
         {/* Hero */}
@@ -232,7 +242,7 @@ export default function ContatoPage() {
         </section>
       </main>
       
-      <Footer />
+      <SomaiFooter />
     </div>
   );
 }
