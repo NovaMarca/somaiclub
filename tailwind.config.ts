@@ -65,6 +65,13 @@ export default {
           "gray-light": "hsl(var(--neo-gray-light))",
           "gray-border": "hsl(var(--neo-gray-border))",
         },
+        somai: {
+          dark: "hsl(var(--somai-dark))",
+          blue: "hsl(var(--somai-blue))",
+          green: "hsl(var(--somai-green))",
+          teal: "hsl(var(--somai-teal))",
+          "teal-light": "hsl(var(--somai-teal-light))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

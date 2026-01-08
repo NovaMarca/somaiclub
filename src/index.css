@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Neopress Design System
-   Colors: Black, White, Baby Blue (CTAs), Gray (secondary)
-   Style: Modern, Minimalist, Corporate
+/* SOMAi CLUB + NeoPress Design System
+   SOMAi: Dark, Teal/Verde gradients, Modern
+   NeoPress: Black, White, Baby Blue (CTAs), Gray (secondary)
 */
 
 @layer base {
@@ -39,7 +39,7 @@
 
     --radius: 0.5rem;
 
-    /* Custom Neopress colors */
+    /* NeoPress colors */
     --neo-black: 0 0% 0%;
     --neo-white: 0 0% 100%;
     --neo-baby-blue: 199 89% 70%;
@@ -101,6 +101,44 @@
     --sidebar-accent-foreground: 0 0% 95%;
     --sidebar-border: 0 0% 20%;
     --sidebar-ring: 199 89% 70%;
+  }
+
+  /* SOMAi Theme - Dark with Teal/Green gradients */
+  .somai-theme {
+    --background: 210 50% 2%;
+    --foreground: 0 0% 100%;
+
+    --card: 210 40% 6%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 210 40% 6%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 145 76% 46%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 210 40% 12%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 30% 15%;
+    --muted-foreground: 210 20% 60%;
+
+    --accent: 215 100% 29%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 30% 20%;
+    --input: 210 30% 20%;
+    --ring: 145 76% 46%;
+
+    /* SOMAi specific colors */
+    --somai-dark: 210 50% 2%;
+    --somai-blue: 215 100% 29%;
+    --somai-green: 145 76% 46%;
+    --somai-teal: 190 50% 30%;
+    --somai-teal-light: 190 45% 35%;
   }
 }
 
