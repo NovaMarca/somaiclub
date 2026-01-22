@@ -18,21 +18,13 @@ import {
 const navItems = [
   { label: "Início", href: "/" },
   {
-    label: "Produtos Parceiros",
-    href: "/produtos-parceiros",
+    label: "SOMAi Shop",
+    href: "/somai-shop",
     children: [
-      { label: "CacauCafé", href: "/produtos-parceiros?categoria=cacaucafe" },
-      { label: "Inovação", href: "/produtos-parceiros?categoria=inovacao" },
-    ],
-  },
-  { label: "Projetos Parceiros", href: "/projetos-parceiros" },
-  {
-    label: "NeoPress",
-    href: "/neopress",
-    children: [
-      { label: "Decoração", href: "/decoracao" },
-      { label: "Brindes", href: "/brindes" },
-      { label: "PDV", href: "/pdv" },
+      { label: "Produtos Parceiros", href: "/produtos-parceiros" },
+      { label: "Produtos Tecnológicos", href: "/produtos-tecnologicos" },
+      { label: "NeoPress", href: "/neopress" },
+      { label: "Contato", href: "/contato" },
     ],
   },
   { label: "Sobre o SOMAi", href: "/sobre-somai" },
