@@ -14,6 +14,7 @@ import Product from "./pages/Product";
 import ProdutosParceiros from "./pages/ProdutosParceiros";
 import ProdutosTecnologicos from "./pages/ProdutosTecnologicos";
 import ProjetosParceiros from "./pages/ProjetosParceiros";
+import ProjetoParceiro from "./pages/ProjetoParceiro";
 import SobreSomai from "./pages/SobreSomai";
 import NotFound from "./pages/NotFound";
 
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/produtos-parceiros" element={<ProdutosParceiros />} />
           <Route path="/produtos-tecnologicos" element={<ProdutosTecnologicos />} />
           <Route path="/projetos-parceiros" element={<ProjetosParceiros />} />
+          <Route path="/projeto/:handle" element={<ProjetoParceiro />} />
           <Route path="/sobre-somai" element={<SobreSomai />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
