@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { SomaiHeader } from "@/components/somai/SomaiHeader";
 import { SomaiFooter } from "@/components/somai/SomaiFooter";
-import { ShoppingBag, Cpu, Printer, Mail } from "lucide-react";
+import { ShoppingBag, Cpu, Printer, Mail, Lightbulb } from "lucide-react";
 
 const shopCategories = [
   {
@@ -10,6 +10,13 @@ const shopCategories = [
     icon: ShoppingBag,
     href: "/produtos-parceiros",
     color: "from-emerald-500 to-teal-600",
+  },
+  {
+    title: "Projetos Parceiros",
+    description: "Conheça projetos inovadores desenvolvidos no ecossistema SOMAi",
+    icon: Lightbulb,
+    href: "/projetos-parceiros",
+    color: "from-amber-500 to-yellow-600",
   },
   {
     title: "Produtos Tecnológicos",
