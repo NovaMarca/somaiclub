@@ -157,7 +157,7 @@ export default function ProductPage() {
                   </Button>
                   <span className="w-12 text-center font-medium text-primary">{quantity}</span>
                   <Button variant="outline" size="icon" onClick={() => setQuantity(quantity + 1)}>
-                    <Plus className="h-4 w-4" />
+                    <Plus className="h-4 w-4 text-lime-400" />
                   </Button>
                 </div>
               </div>
