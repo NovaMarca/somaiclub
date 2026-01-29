@@ -153,7 +153,7 @@ export default function ProductPage() {
                 </label>
                 <div className="flex items-center gap-2">
                   <Button variant="outline" size="icon" onClick={() => setQuantity(Math.max(1, quantity - 1))}>
-                    <Minus className="h-4 w-4" />
+                    <Minus className="h-4 w-4 text-lime-400" />
                   </Button>
                   <span className="w-12 text-center font-medium text-primary">{quantity}</span>
                   <Button variant="outline" size="icon" onClick={() => setQuantity(quantity + 1)}>
