@@ -122,7 +122,7 @@ export default function ProductPage() {
             <div className="space-y-6">
               <div>
                 <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">{product.title}</h1>
-                <p className="text-2xl font-bold text-primary">
+                <p className="text-2xl font-bold text-lime-400">
                   R$ {parseFloat(selectedVariant?.price?.amount || product.priceRange.minVariantPrice.amount).toFixed(2)}
                 </p>
               </div>
