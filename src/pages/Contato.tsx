@@ -114,7 +114,7 @@ export default function ContatoPage() {
                     </div>
                     <div>
                       <h3 className="font-medium text-foreground">Telefone</h3>
-                      <p className="text-muted-foreground">(16) 99999-9999</p>
+                      <p className="text-muted-foreground">(16) 99782-2667</p>
                     </div>
                   </div>
 
