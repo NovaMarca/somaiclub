@@ -32,8 +32,8 @@ export function SomaiHero() {
               className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8"
               asChild
             >
-              <Link to="/contato?assunto=Quero%20entrar%20em%20um%20squad">
-                Quero entrar em um squad
+              <Link to="/contato?assunto=Quero%20me%20associar">
+                Quero me associar
               </Link>
             </Button>
             <Button
@@ -42,20 +42,11 @@ export function SomaiHero() {
               className="border-primary text-primary hover:bg-primary/10 text-lg px-8"
               asChild
             >
-              <Link to="/contato?assunto=Quero%20patrocinar%20ou%20contratar">
-                Quero patrocinar/contratar
+              <Link to="/contato?assunto=Quero%20me%20conectar">
+                Quero me conectar
               </Link>
             </Button>
-            <Button
-              size="lg"
-              variant="secondary"
-              className="text-lg px-8"
-              asChild
-            >
-              <Link to="/contato?assunto=Associar-se%20ao%20SOMAi">
-                Associe-se agora!
-              </Link>
-            </Button>
+            
           </div>
         </div>
       </div>
